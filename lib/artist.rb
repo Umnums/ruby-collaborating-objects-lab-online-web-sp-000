@@ -31,4 +31,11 @@ class Artist
     end
     flag
   end
+
+  def print_songs
+    array = self.songs
+    array.each do |song_name|
+      puts "#{song_name}"
+    end
+  end
 end
