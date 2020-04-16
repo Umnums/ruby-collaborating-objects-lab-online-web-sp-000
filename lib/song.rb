@@ -34,4 +34,4 @@ end
 
 this = Song.new("this")
 this.artist_name="Michael"
-print this.artist.name
+print this.artist
