@@ -22,7 +22,7 @@ class Artist
   def self.find_or_create_by_name(name)
     flag = nil
     self.all.each do |artist|
-      if song.name == name
+      if artist.name == name
         flag = song
       end
     end
