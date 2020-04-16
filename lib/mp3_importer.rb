@@ -10,3 +10,5 @@ class MP3Importer
   end
 
 end
+
+print Dir[./spec/fixtures/mp3s]
