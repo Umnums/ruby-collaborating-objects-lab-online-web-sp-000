@@ -10,7 +10,7 @@ class MP3Importer
     all = Dir[path]
     all_songs =[]
     all.each do |song|
-      all_songs << song.strip("mp3s/")[1]
+      all_songs << song.split("mp3s/")[1]
     end
     all_songs
   end
