@@ -7,7 +7,11 @@ class MP3Importer
 
   def files
     path = @path+"/*"
-    Dir[path]
+    all = Dir[path]
+    all_songs =[]
+    all.each do |song|
+      all_songs << song.strip("mp3s/")[1]
+    end
   end
 
 end
