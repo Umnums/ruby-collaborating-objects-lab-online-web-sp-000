@@ -25,4 +25,5 @@ class Artist
     else
       new_artist = Artist.new(name)
     end
+  end
 end
