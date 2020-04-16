@@ -20,7 +20,9 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.include?{|song| song.name == name}
+    flag = nil
+    self.all.each do |song|
+      
       self.all.find{|song| song.name == name}
     else
       new_artist = Artist.new(name)
