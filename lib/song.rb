@@ -16,7 +16,7 @@ class Song
     artist_name = file.split(" - ")[0]
     name = file.split(" - ")[1]
     song = Song.new(name)
-    song.artist = name
+    song.artist = artist_name
     song
   end
 
