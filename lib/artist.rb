@@ -30,4 +30,5 @@ class Artist
       flag = Song.new(name)
     end
     flag
+  end
 end
