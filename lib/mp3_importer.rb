@@ -11,4 +11,4 @@ class MP3Importer
 
 end
 
-print Dir["./spec/fixtures/mp3s"]
+print Dir["./spec/fixtures/mp3s/*"]
