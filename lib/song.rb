@@ -33,4 +33,5 @@ end
 # print new_instance.artist
 
 this = Song.new("this")
-print this.artist_name="Michael"
+this.artist_name="Michael"
+this.artist.name
