@@ -12,6 +12,7 @@ class MP3Importer
     all.each do |song|
       all_songs << song.strip("mp3s/")[1]
     end
+    all_songs
   end
 
 end
