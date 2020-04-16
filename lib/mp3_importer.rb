@@ -7,5 +7,6 @@ class MP3Importer
 
   def files
     Dir[@path/*.mp3]
+  end
 
 end
