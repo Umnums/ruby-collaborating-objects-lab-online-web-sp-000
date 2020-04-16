@@ -20,6 +20,15 @@ class Song
     song
   end
 
+  def artist_name=(name)
+    if Artist.all.include?(name)
+      return Artist.all.find(name)
+    else
+      artist = Artist.new(name)
+      artist
+    end
+  end
+
 end
 file_name = 'Michael Jackson - Black or White - pop.mp3'
 new_instance = Song.new_by_filename(file_name)
