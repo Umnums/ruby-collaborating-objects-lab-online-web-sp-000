@@ -35,7 +35,7 @@ class Artist
   def print_songs
     array = self.songs
     array.each do |song_name|
-      puts "#{song_name}"
+      puts "#{song_name.name}"
     end
   end
 end
