@@ -22,9 +22,13 @@ class Song
   end
 
   def artist_name=(name)
-    if Artist.all.include?(name)
-      return Artist.all.find(name)
-    else
+    flag = nil
+    Artist.all.each do |artist_name|
+      if artist_name.name == name
+        flag = artist_name
+      end
+    end
+    if flag == nil
       artist = Artist.new(name)
       artist
     end
