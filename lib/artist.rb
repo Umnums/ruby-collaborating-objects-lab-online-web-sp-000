@@ -23,7 +23,7 @@ class Artist
     flag = nil
     self.all.each do |artist|
       if artist.name == name
-        flag = song
+        flag = artist
       end
     end
     if flag == nil
