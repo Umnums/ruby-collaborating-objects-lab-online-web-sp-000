@@ -26,9 +26,8 @@ class Artist
         flag = song
       end
     end
-      self.all.find{|song| song.name == name}
-    else
-      new_artist = Artist.new(name)
+    if flag = nil
+      flag = Song.new(name)
     end
-  end
+    flag
 end
