@@ -30,8 +30,9 @@ class Song
     end
     if flag == nil
       artist = Artist.new(name)
-      artist
+      flag = artist
     end
+    flag
   end
 
 end
