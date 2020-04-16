@@ -23,4 +23,5 @@ class Song
 end
 file_name = 'Michael Jackson - Black or White - pop.mp3'
 new_instance = Song.new_by_filename(file_name)
-print new_instance.artist = "mike"
+new_instance.artist = "mike"
+print new_instance.artist
