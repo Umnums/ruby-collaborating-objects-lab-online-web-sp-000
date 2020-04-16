@@ -37,4 +37,4 @@ end
 # print new_instance.artist
 
 this = Song.new("this")
-this.name
+this.artist
