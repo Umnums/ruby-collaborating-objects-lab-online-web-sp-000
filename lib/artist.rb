@@ -26,7 +26,7 @@ class Artist
         flag = song
       end
     end
-    if flag = nil
+    if flag == nil
       flag = Song.new(name)
     end
     flag
